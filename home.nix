@@ -10,6 +10,7 @@
     cargo
     curl
     ffmpeg-full
+    gh
     git
     go
     go-task
