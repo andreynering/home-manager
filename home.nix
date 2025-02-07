@@ -22,6 +22,7 @@
     ripgrep
     rustc
     rustfmt
+    sequin
     tmux
     tree
     vim
