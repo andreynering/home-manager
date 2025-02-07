@@ -22,6 +22,7 @@
     ripgrep
     rustc
     rustfmt
+    tmux
     tree
     vim
     wget
