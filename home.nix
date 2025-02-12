@@ -74,6 +74,9 @@
     };
   };
 
+  home.sessionPath = [
+    "$HOME/go/bin"
+  ];
   home.sessionVariables = {
     EDITOR = "micro";
   };
