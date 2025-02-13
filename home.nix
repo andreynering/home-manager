@@ -35,6 +35,12 @@
     userName = "Andrey Nering";
     userEmail = "andreynering@users.noreply.github.com";
 
+    extraConfig = {
+      status = {
+        showUntrackedFiles = "all";
+      };
+    };
+
     aliases = {
       br = "branch";
       ci = "commit";
