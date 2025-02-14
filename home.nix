@@ -36,6 +36,9 @@
     userEmail = "andreynering@users.noreply.github.com";
 
     extraConfig = {
+      core = {
+        excludesFile = "~/.config/.gitignore";
+      };
       status = {
         showUntrackedFiles = "all";
       };
