@@ -19,6 +19,7 @@
     htop
     jq
     micro
+    nodejs_22
     ripgrep
     rustc
     rustfmt
@@ -27,6 +28,7 @@
     tree
     vim
     wget
+    yarn
     zsh-completions
   ];
 
