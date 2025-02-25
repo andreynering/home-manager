@@ -89,6 +89,7 @@
     "$HOME/go/bin"
   ];
   home.sessionVariables = {
+    LANG = "en_US.utf8";
     EDITOR = "micro";
   };
 
