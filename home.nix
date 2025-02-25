@@ -13,6 +13,9 @@
     gh
     git
     go
+    gopls
+    golint
+    gotools
     go-task
     golangci-lint
     goreleaser
@@ -62,6 +65,51 @@
     };
   };
 
+  programs.neovim = {
+    enable = true;
+
+    plugins = with pkgs.vimPlugins; [
+      catppuccin-nvim
+      coc-nvim
+      nvim-lspconfig
+      vim-go
+    ];
+
+    extraConfig = ''
+      " catppuccin
+      set termguicolors
+      lua << EOF
+        require("catppuccin").setup({
+          flavour = "mocha", -- latte, frappe, macchiato, mocha
+          background = {
+           light = "latte",
+           dark = "mocha",
+         },
+         transparent_background = false,
+         term_colors = true,
+         integrations = {
+           cmp = true,
+           gitsigns = true,
+           nvimtree = true,
+           telescope = true,
+           which_key = true,
+         }
+       })
+       vim.cmd.colorscheme "catppuccin"
+      EOF
+
+      " vim-go
+      let g:go_fmt_command = "goimports"
+      let g:go_auto_type_info = 1
+      let g:go_highlight_types = 1
+      let g:go_highlight_fields = 1
+      let g:go_highlight_functions = 1
+      let g:go_highlight_function_calls = 1
+      let g:go_highlight_operators = 1
+      let g:go_highlight_extra_types = 1
+    '';
+  };
+
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
@@ -90,7 +138,7 @@
   ];
   home.sessionVariables = {
     LANG = "en_US.utf8";
-    EDITOR = "micro";
+    EDITOR = "nvim";
   };
 
   programs.home-manager.enable = true;
