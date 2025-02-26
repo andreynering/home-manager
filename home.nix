@@ -7,17 +7,21 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    bash-language-server
     cargo
     curl
     ffmpeg-full
     gh
     git
     go
-    gopls
+    gofumpt
     golint
+    gopls
+    gotests
     gotools
     go-task
     golangci-lint
+    golangci-lint-langserver
     goreleaser
     htop
     jq
@@ -29,9 +33,12 @@
     sequin
     tmux
     tree
+    typescript-language-server
     vim
+    vscode-langservers-extracted
     wget
     yarn
+    yaml-language-server
     zsh-completions
   ];
 
@@ -71,8 +78,8 @@
     plugins = with pkgs.vimPlugins; [
       catppuccin-nvim
       coc-nvim
+      neo-tree-nvim
       nvim-lspconfig
-      vim-go
     ];
 
     extraConfig = ''
@@ -97,16 +104,6 @@
        })
        vim.cmd.colorscheme "catppuccin"
       EOF
-
-      " vim-go
-      let g:go_fmt_command = "goimports"
-      let g:go_auto_type_info = 1
-      let g:go_highlight_types = 1
-      let g:go_highlight_fields = 1
-      let g:go_highlight_functions = 1
-      let g:go_highlight_function_calls = 1
-      let g:go_highlight_operators = 1
-      let g:go_highlight_extra_types = 1
     '';
   };
 
