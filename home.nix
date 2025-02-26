@@ -23,6 +23,8 @@
     golangci-lint
     golangci-lint-langserver
     goreleaser
+    helix
+    helix-gpt
     htop
     jq
     micro
@@ -135,7 +137,7 @@
   ];
   home.sessionVariables = {
     LANG = "en_US.utf8";
-    EDITOR = "nvim";
+    EDITOR = "hx";
   };
 
   programs.home-manager.enable = true;
