@@ -132,6 +132,18 @@
     };
   };
 
+  programs.fish = {
+    enable = true;
+
+    interactiveShellInit = ''
+      fish_config prompt choose arrow
+    '';
+
+    shellAliases = {
+      t = "task";
+    };
+  };
+
   home.sessionPath = [
     "$HOME/go/bin"
   ];
