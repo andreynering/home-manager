@@ -50,6 +50,9 @@
     userEmail = "andreynering@users.noreply.github.com";
 
     extraConfig = {
+      init = {
+        defaultBranch = "main";
+      };
       core = {
         excludesFile = "~/.config/.gitignore";
       };
