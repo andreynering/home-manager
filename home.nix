@@ -14,15 +14,15 @@
     gh
     git
     go
-    gofumpt
-    golint
-    gopls
-    gotests
-    gotools
     go-task
+    gofumpt
     golangci-lint
     golangci-lint-langserver
+    golint
+    gopls
     goreleaser
+    gotests
+    gotools
     helix
     helix-gpt
     htop
@@ -39,8 +39,8 @@
     vim
     vscode-langservers-extracted
     wget
-    yarn
     yaml-language-server
+    yarn
     zsh-completions
   ];
 
