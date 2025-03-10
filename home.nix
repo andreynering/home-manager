@@ -14,6 +14,7 @@
     gh
     git
     go
+    go-swagger
     go-task
     gofumpt
     golangci-lint
