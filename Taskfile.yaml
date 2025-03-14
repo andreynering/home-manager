@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  nix:update:
+    desc: Update Nix channel
+    cmds:
+      - sudo -i nix-channel --update
+
+  switch:
+    desc: Run `home-manager switch`
+    cmds:
+      - home-manager switch
