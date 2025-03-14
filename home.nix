@@ -13,6 +13,7 @@
     ffmpeg-full
     gh
     git
+    glow
     go
     go-swagger
     go-task
@@ -24,6 +25,7 @@
     goreleaser
     gotests
     gotools
+    gum
     helix
     helix-gpt
     htop
