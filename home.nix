@@ -156,6 +156,7 @@
   home.sessionVariables = {
     LANG = "en_US.utf8";
     EDITOR = "hx";
+    LESSCHARSET = "UTF-8";
   };
 
   programs.home-manager.enable = true;
