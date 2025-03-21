@@ -9,6 +9,7 @@
   home.packages = with pkgs; [
     bash-language-server
     cargo
+    charm-freeze
     curl
     ffmpeg-full
     gh
