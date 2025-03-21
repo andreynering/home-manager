@@ -31,7 +31,6 @@
     htop
     jq
     micro
-    nodejs_22
     ripgrep
     rustc
     rustfmt
@@ -136,6 +135,12 @@
     shellAliases = {
       t = "task";
     };
+
+  initExtra = ''
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+  '';
   };
 
   programs.fish = {
@@ -157,6 +162,7 @@
     LANG = "en_US.utf8";
     EDITOR = "hx";
     LESSCHARSET = "UTF-8";
+    NVMDIR = "$HOME/.nvm";
   };
 
   programs.home-manager.enable = true;
