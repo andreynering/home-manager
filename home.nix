@@ -30,6 +30,7 @@
     helix
     helix-gpt
     htop
+    lolcat
     jq
     micro
     ripgrep
