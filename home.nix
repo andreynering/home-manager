@@ -162,9 +162,9 @@
     "$HOME/go/bin"
   ];
   home.sessionVariables = {
-    LANG = "en_US.utf8";
-    EDITOR = "hx";
+    LANG = "en_US.UTF8";
     LESSCHARSET = "UTF-8";
+    EDITOR = "hx";
     NVMDIR = "$HOME/.nvm";
   };
 
