@@ -11,6 +11,7 @@
     cargo
     charm-freeze
     curl
+    emacs
     ffmpeg-full
     gh
     git
