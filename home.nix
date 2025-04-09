@@ -85,41 +85,6 @@
     };
   };
 
-  programs.neovim = {
-    enable = true;
-
-    plugins = with pkgs.vimPlugins; [
-      catppuccin-nvim
-      coc-nvim
-      neo-tree-nvim
-      nvim-lspconfig
-    ];
-
-    extraConfig = ''
-      " catppuccin
-      set termguicolors
-      lua << EOF
-        require("catppuccin").setup({
-          flavour = "mocha", -- latte, frappe, macchiato, mocha
-          background = {
-           light = "latte",
-           dark = "mocha",
-         },
-         transparent_background = false,
-         term_colors = true,
-         integrations = {
-           cmp = true,
-           gitsigns = true,
-           nvimtree = true,
-           telescope = true,
-           which_key = true,
-         }
-       })
-       vim.cmd.colorscheme "catppuccin"
-      EOF
-    '';
-  };
-
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
