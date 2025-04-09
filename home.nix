@@ -78,7 +78,6 @@
       authors = "!git log --format='%an <%ae>' | sort -u";
       cleanup = "!git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git br -D";
       do-gc = "!f() { git reflog expire --all --expire=now && git gc --prune=now --aggressive; }; f";
-      do-merge = "!f() { git merge --no-ff $1 && git branch -d $1; }; f";
       fixup = "commit --fixup";
       stash-all = "stash save --include-untracked";
       undo = "reset --soft HEAD^";
