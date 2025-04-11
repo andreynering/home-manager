@@ -7,6 +7,8 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    bash
+    bash-completion
     bash-language-server
     cargo
     charm-freeze
