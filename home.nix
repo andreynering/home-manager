@@ -127,6 +127,10 @@
     };
   };
 
+  programs.atuin = {
+    enable = true;
+  };
+
   home.sessionPath = [
     "$HOME/go/bin"
   ];
