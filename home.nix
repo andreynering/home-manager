@@ -14,6 +14,7 @@
     charm-freeze
     curl
     emacs
+    duf
     ffmpeg-full
     gh
     git
