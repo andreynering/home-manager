@@ -37,6 +37,7 @@
     lolcat
     jq
     micro
+    mods
     ripgrep
     rustc
     rustfmt
