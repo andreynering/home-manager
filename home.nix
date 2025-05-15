@@ -44,6 +44,7 @@
     tmux
     tree
     typescript-language-server
+    vhs
     vim
     vscode-langservers-extracted
     wget
