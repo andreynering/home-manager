@@ -10,7 +10,6 @@
     bash
     bash-completion
     bash-language-server
-    cargo
     charm-freeze
     curl
     emacs
@@ -39,8 +38,7 @@
     micro
     mods
     ripgrep
-    rustc
-    rustfmt
+    rustup
     sequin
     tmux
     tree
