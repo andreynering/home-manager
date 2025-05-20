@@ -49,6 +49,7 @@
     wget
     yaml-language-server
     yarn
+    zellij
     zsh-completions
   ];
 
