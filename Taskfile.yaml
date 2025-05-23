@@ -10,3 +10,5 @@ tasks:
     desc: Run `home-manager switch`
     cmds:
       - home-manager switch
+    env:
+      NIXPKGS_ALLOW_UNFREE: 1

@@ -7,6 +7,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    _1password-cli
     bash
     bash-completion
     bash-language-server
@@ -136,6 +137,7 @@
     LESSCHARSET = "UTF-8";
     EDITOR = "hx";
     NVMDIR = "$HOME/.nvm";
+    NIXPKGS_ALLOW_UNFREE = "1";
   };
 
   programs.home-manager.enable = true;
