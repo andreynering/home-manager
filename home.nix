@@ -16,6 +16,7 @@
     emacs
     duf
     ffmpeg-full
+    fzf
     gh
     git
     glow
