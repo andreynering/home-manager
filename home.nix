@@ -133,6 +133,7 @@
 
   home.sessionPath = [
     "$HOME/go/bin"
+    "$HOME/.cargo/bin"
   ];
   home.sessionVariables = {
     LESSCHARSET = "UTF-8";
