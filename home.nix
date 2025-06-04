@@ -60,6 +60,10 @@
     userName = "Andrey Nering";
     userEmail = "andreynering@users.noreply.github.com";
 
+    lfs = {
+      enable = true;
+    };
+
     extraConfig = {
       init = {
         defaultBranch = "main";
