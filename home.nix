@@ -30,7 +30,6 @@
     golangci-lint-langserver
     golint
     gopls
-    goreleaser
     gotests
     gotools
     gum
