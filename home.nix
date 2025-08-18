@@ -26,8 +26,6 @@
     go-swagger
     go-task
     gofumpt
-    golangci-lint
-    golangci-lint-langserver
     golint
     gopls
     gotests
