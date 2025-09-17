@@ -1,8 +1,9 @@
 version: '3'
 
 tasks:
-  nix:update:
+  update:
     desc: Update Nix channel
+    prompt: This risk breaking your Nix / home-manager setup. Are you sure you want to continue?
     cmds:
       - sudo -i nix-channel --update
 
