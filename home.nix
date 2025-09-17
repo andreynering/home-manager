@@ -23,7 +23,6 @@
     git
     glow
     go
-    go-swagger
     go-task
     gofumpt
     golint
