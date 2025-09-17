@@ -25,6 +25,7 @@
     go
     go-task
     gofumpt
+    google-cloud-sdk
     golint
     gopls
     gotests
