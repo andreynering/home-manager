@@ -13,6 +13,7 @@
     bash
     bash-completion
     bash-language-server
+    caddy
     charm-freeze
     curl
     emacs
