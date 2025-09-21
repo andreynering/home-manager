@@ -7,7 +7,7 @@ My [home-manager][homemanager] configuration.
 1. Remove these files if present (backup in doubt).
 
 ```bash
-sudo rm /etc/bash.bashrc.backup-before-nix
+sudo rm /etc/bashrc.backup-before-nix
 sudo rm /etc/zshrc.backup-before-nix
 ```
 
