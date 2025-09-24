@@ -140,10 +140,11 @@
     "$HOME/.cargo/bin"
   ];
   home.sessionVariables = {
-    LESSCHARSET = "UTF-8";
+    DO_NOT_TRACK = "1";
     EDITOR = "hx";
-    NVMDIR = "$HOME/.nvm";
+    LESSCHARSET = "UTF-8";
     NIXPKGS_ALLOW_UNFREE = "1";
+    NVMDIR = "$HOME/.nvm";
   };
 
   programs.home-manager.enable = true;
