@@ -10,6 +10,7 @@
 
   home.packages = with pkgs; [
     _1password-cli
+    awscli2
     bash
     bash-completion
     bash-language-server
