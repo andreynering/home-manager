@@ -38,7 +38,6 @@
     htop
     lolcat
     jq
-    micro
     mods
     pyenv
     ripgrep
