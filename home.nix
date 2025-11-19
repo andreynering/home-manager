@@ -25,7 +25,7 @@
     git
     glow
     go
-    go-task
+    # go-task
     gofumpt
     google-cloud-sdk
     golint
