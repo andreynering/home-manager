@@ -7,8 +7,9 @@ My [home-manager][homemanager] configuration.
 1. Remove these files if present (backup in doubt).
 
 ```bash
-sudo rm /etc/bashrc.backup-before-nix
-sudo rm /etc/zshrc.backup-before-nix
+sudo rm -f /etc/bash.bashrc.backup-before-nix
+sudo rm -f /etc/bashrc.backup-before-nix
+sudo rm -f /etc/zshrc.backup-before-nix
 ```
 
 2. Reinstall Nix:
