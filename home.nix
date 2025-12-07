@@ -58,40 +58,59 @@
 
   programs.git = {
     enable = true;
-    userName = "Andrey Nering";
-    userEmail = "andreynering@users.noreply.github.com";
 
     lfs = {
       enable = true;
     };
 
-    extraConfig = {
+    signing = {
+      key = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
+      signByDefault = true;
+    };
+
+    settings = {
+      user = {
+        name = "Andrey Nering";
+        email = "andreynering@users.noreply.github.com";
+      };
+
+      gpg = {
+        format = "ssh";
+      };
+
+      "gpg.ssh" = {
+        allowedSignersFile = "${config.home.homeDirectory}/.ssh/allowed_signers";
+      };
+
       init = {
         defaultBranch = "main";
       };
+
       core = {
         excludesFile = "~/.config/.gitignore";
       };
+
       status = {
         showUntrackedFiles = "all";
       };
+
       fetch = {
         prune = true;
       };
-    };
 
-    aliases = {
-      br = "branch";
-      ci = "commit";
-      co = "checkout";
-      dc = "diff --cached";
-      st = "status";
-      authors = "!git log --format='%an <%ae>' | sort -u";
-      cleanup = "!git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git br -D";
-      do-gc = "!f() { git reflog expire --all --expire=now && git gc --prune=now --aggressive; }; f";
-      fixup = "commit --fixup";
-      stash-all = "stash save --include-untracked";
-      undo = "reset --soft HEAD^";
+      alias = {
+        br = "branch";
+        ci = "commit";
+        co = "checkout";
+        dc = "diff --cached";
+        st = "status";
+        authors = "!git log --format='%an <%ae>' | sort -u";
+        cleanup = "!git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git br -D";
+        do-gc = "!f() { git reflog expire --all --expire=now && git gc --prune=now --aggressive; }; f";
+        fixup = "commit --fixup";
+        stash-all = "stash save --include-untracked";
+        undo = "reset --soft HEAD^";
+      };
     };
   };
 
