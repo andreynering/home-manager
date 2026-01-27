@@ -134,6 +134,7 @@
 
     shellAliases = {
       t = "task";
+      p = "git pull && git cleanup && task -ls | grep -q install && task install";
     };
 
   initContent = ''
