@@ -54,6 +54,7 @@
     yaml-language-server
     yarn
     zellij
+    zig
     zsh-completions
   ];
 
