@@ -37,6 +37,7 @@
     helix-gpt
     htop
     lolcat
+    lua
     jq
     mods
     pyenv
