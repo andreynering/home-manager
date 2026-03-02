@@ -34,7 +34,6 @@
     gotools
     gum
     helix
-    helix-gpt
     htop
     lolcat
     lua
