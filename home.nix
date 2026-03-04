@@ -19,6 +19,7 @@
     curl
     emacs
     duf
+    esbuild
     ffmpeg-full
     fzf
     gh
