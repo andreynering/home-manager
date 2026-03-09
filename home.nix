@@ -144,6 +144,8 @@
     shellAliases = {
       t = "task";
       p = "git pull && git cleanup && task -ls | grep -q install && task install";
+      y = "yazi";
+      z = "zellij";
     };
 
   initContent = ''
