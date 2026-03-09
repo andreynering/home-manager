@@ -20,6 +20,7 @@
     emacs
     duf
     esbuild
+    fd
     ffmpeg-full
     fzf
     gh
@@ -36,11 +37,15 @@
     gum
     helix
     htop
+    imagemagick
     lolcat
     lua
     jq
     mods
+    p7zip
+    poppler
     pyenv
+    resvg
     ripgrep
     rustup
     sequin
@@ -53,7 +58,9 @@
     wget
     yaml-language-server
     yarn
+    yazi
     zellij
+    zoxide
     zig
     zsh-completions
   ];
