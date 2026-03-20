@@ -38,6 +38,8 @@
     helix
     htop
     imagemagick
+    libyaml
+    pkg-config
     lolcat
     lua
     jq
@@ -156,7 +158,24 @@
       export PYENV_ROOT="$HOME/.pyenv"
       [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
       eval "$(pyenv init - zsh)"
+
+      eval "$(rbenv init - zsh)"
     '';
+  };
+
+  programs.rbenv = {
+    enable = true;
+    plugins = [
+      {
+        name = "ruby-build";
+        src = pkgs.fetchFromGitHub {
+          owner = "rbenv";
+          repo = "ruby-build";
+          rev = "v20260317";
+          sha256 = "sha256-Ol6cs/716JWfnIzoa2P2uDcHNyZ5VLtpGtmXEcJSoUE=";
+        };
+      }
+    ];
   };
 
   home.sessionPath = [
@@ -170,6 +189,8 @@
     LESSCHARSET = "UTF-8";
     NIXPKGS_ALLOW_UNFREE = "1";
     NVMDIR = "$HOME/.nvm";
+    PKG_CONFIG_PATH = "${pkgs.libyaml.dev}/lib/pkgconfig";
+    RUBY_CONFIGURE_OPTS = "--with-yaml-dir=${pkgs.libyaml.dev}";
   };
 
   programs.home-manager.enable = true;
