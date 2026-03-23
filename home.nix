@@ -26,6 +26,7 @@
     gh
     git
     glow
+    grype
     go
     # go-task
     gofumpt
@@ -65,6 +66,7 @@
     zoxide
     zig
     zsh-completions
+    zstd
   ];
 
   programs.git = {
