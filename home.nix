@@ -10,6 +10,7 @@
 
   home.packages = with pkgs; [
     _1password-cli
+    air
     awscli2
     bash
     bash-completion
