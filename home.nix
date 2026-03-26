@@ -52,6 +52,7 @@
     ripgrep
     rustup
     sequin
+    stripe-cli
     tmux
     tree
     typescript-language-server
