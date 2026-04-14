@@ -186,6 +186,8 @@
   home.sessionPath = [
     "$HOME/go/bin"
     "$HOME/.cargo/bin"
+    "$HOME/.local/bin"
+    "$HOME/.opencode/bin"
   ];
   home.sessionVariables = {
     DO_NOT_TRACK = "1";
