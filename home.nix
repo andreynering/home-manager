@@ -126,6 +126,7 @@ in
         co = "checkout";
         dc = "diff --cached";
         st = "status";
+        cp = "cherry-pick";
         authors = "!git log --format='%an <%ae>' | sort -u";
         cleanup = "!git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git br -D";
         do-gc = "!f() { git reflog expire --all --expire=now && git gc --prune=now --aggressive; }; f";
