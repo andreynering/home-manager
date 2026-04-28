@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
+let
+  pkgsUnstable = import <nixos-unstable> {};
+in
 {
   home.username = "andrey";
   home.homeDirectory = if pkgs.stdenv.isDarwin
@@ -53,6 +56,7 @@
     pyenv
     resvg
     ripgrep
+    pkgsUnstable.rtk
     rustup
     sequin
     stripe-cli
