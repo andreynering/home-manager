@@ -197,10 +197,8 @@ in
     "$HOME/.opencode/bin"
   ];
   home.sessionVariables = {
-    CRUSH_SHORT_TOOL_DESCRIPTIONS = "1";
     DO_NOT_TRACK = "1";
     EDITOR = "hx";
-    HYPERCRUSH = "1";
     LESSCHARSET = "UTF-8";
     NIXPKGS_ALLOW_UNFREE = "1";
     NVMDIR = "$HOME/.nvm";
