@@ -172,6 +172,8 @@ in
       eval "$(pyenv init - zsh)"
 
       eval "$(rbenv init - zsh)"
+
+      eval "$(mise activate zsh)"
     '';
   };
 
