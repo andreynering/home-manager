@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> I'm in on ongoing migration from home-manager to
+> [Mise](https://mise.jdx.dev/), so this repo has incomplete configuration.
+>
+> See my Mise config here: https://github.com/andreynering/mise
+
 # home-manager
 
 My [home-manager][homemanager] configuration.

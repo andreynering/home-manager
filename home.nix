@@ -13,7 +13,6 @@ in
 
   home.packages = with pkgs; [
     _1password-cli
-    air
     awscli2
     bash
     bash-completion
@@ -21,59 +20,25 @@ in
     caddy
     charm-freeze
     curl
-    emacs
     duf
     esbuild
-    fd
-    ffmpeg-full
-    fzf
-    gh
     git
-    glow
     grype
-    go
-    # go-task
-    gofumpt
     (google-cloud-sdk.withExtraComponents [
       google-cloud-sdk.components.gke-gcloud-auth-plugin
     ])
-    golint
-    gopls
-    gotests
-    gotools
-    gum
-    helix
     htop
-    imagemagick
-    libyaml
     pkg-config
     lolcat
-    lua
-    jq
-    mods
     p7zip
     poppler
-    pyenv
     resvg
-    ripgrep
-    pkgsUnstable.rtk
-    rustup
     sequin
-    stripe-cli
-    tmux
     tree
     typescript-language-server
-    uv
-    vhs
     vim
-    vscode-langservers-extracted
     wget
     yaml-language-server
-    yarn
-    yazi
-    zellij
-    zoxide
-    zig
     zsh-completions
     zstd
   ];
@@ -163,49 +128,15 @@ in
     };
 
     initContent = ''
-      export NVM_DIR="$HOME/.nvm"
-      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-      [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-      export PYENV_ROOT="$HOME/.pyenv"
-      [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-      eval "$(pyenv init - zsh)"
-
-      eval "$(rbenv init - zsh)"
-
       eval "$(mise activate zsh)"
     '';
   };
 
-  programs.rbenv = {
-    enable = true;
-    plugins = [
-      {
-        name = "ruby-build";
-        src = pkgs.fetchFromGitHub {
-          owner = "rbenv";
-          repo = "ruby-build";
-          rev = "v20260317";
-          sha256 = "sha256-Ol6cs/716JWfnIzoa2P2uDcHNyZ5VLtpGtmXEcJSoUE=";
-        };
-      }
-    ];
-  };
-
   home.sessionPath = [
-    "$HOME/go/bin"
-    "$HOME/.cargo/bin"
     "$HOME/.local/bin"
-    "$HOME/.opencode/bin"
   ];
   home.sessionVariables = {
-    DO_NOT_TRACK = "1";
-    EDITOR = "hx";
-    LESSCHARSET = "UTF-8";
     NIXPKGS_ALLOW_UNFREE = "1";
-    NVMDIR = "$HOME/.nvm";
-    PKG_CONFIG_PATH = "${pkgs.libyaml.dev}/lib/pkgconfig";
-    RUBY_CONFIGURE_OPTS = "--with-yaml-dir=${pkgs.libyaml.dev}";
   };
 
   programs.home-manager.enable = true;
