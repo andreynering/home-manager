@@ -13,12 +13,9 @@ in
 
   home.packages = with pkgs; [
     _1password-cli
-    awscli2
     bash
     bash-completion
-    bash-language-server
     caddy
-    charm-freeze
     curl
     duf
     esbuild
@@ -33,12 +30,10 @@ in
     p7zip
     poppler
     resvg
-    sequin
     tree
     typescript-language-server
     vim
     wget
-    yaml-language-server
     zsh-completions
     zstd
   ];
